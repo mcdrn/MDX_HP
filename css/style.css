@@ -226,11 +226,15 @@ small{
 
 
 /* スマホ用 */
-@media screen and (max-width: 580px){
+@media screen and (max-width: 480px){
 
+  *{
+    padding: 0;
+  }  
+    
   main{
     width: 100%;
-    margin-top: 80px;
+    margin-top: 30px;
   }
   p{
     font-size: 22px;
@@ -240,7 +244,7 @@ small{
 
   
   h2{
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
   }
 
@@ -251,12 +255,12 @@ small{
     background: #eee;
     display: flex;
     justify-content: space-between;
-    padding: 35px;
     top: 0;
     position: fixed;
     z-index: 99;
     transition: transform 0.3s 0.3s;
     text-align: center;
+    margin: auto;
   }
 
   .responsive_btn{
@@ -291,7 +295,7 @@ small{
 
   nav ul li{
     padding: auto;
-    margin: 60px auto;
+    margin: 30px auto;
   }
 
 
@@ -301,7 +305,7 @@ small{
   }
 
   .index{
-    margin: 40px 0 ;
+    margin: auto;
     text-align: center;
     padding: 40px 0;
   }
@@ -310,7 +314,8 @@ small{
     color: #000;
     display: flex;
     justify-content: center;
-    padding: auto;
+    padding: 0;
+    margin: 0 0 40px;
 
   }
   .nav_link {
@@ -339,12 +344,19 @@ small{
   #first-view{
     display:flex;
     flex-flow: column;
-    border:2px #ccc solid;
     padding-top: 80px;
   }
 
   #first-view img{
     width: auto;
+  }
+
+  .vm{
+    text-align: center;
+  }
+
+  .vm a{
+    text-decoration: underline;
   }
 
   .gallery{
@@ -359,18 +371,22 @@ small{
     margin: auto;
   }
 
+  .imglogo{
+    display: none;
+  }
+
   .human{
-    margin: 30px auto;
+    margin: auto;
     text-align: center;
   }
 
   .human p{
-    font-size: 28px;
+    font-size: 20px;
     width: 100%;
   }
   .human h3{
     margin: auto;
-    font-size: 40px;
+    font-size: 25px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 
