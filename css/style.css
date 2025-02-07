@@ -1,0 +1,392 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  color: #212121;
+  font-size: 16px;
+  width: 100%;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  opacity: .5;
+}
+
+header {
+  background: #eee;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  top: 0;
+  position: fixed;
+  z-index: 99;
+  transition: transform 0.3s 0.3s;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+} 
+
+
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: auto 20px;
+}
+
+
+.menu_line {
+  background: #000;
+  border-radius: 5px;
+  width: 100%;
+  height: 5px;
+  margin: 4px 0;
+}
+
+.line{
+  align-items: center;
+  margin: auto 50px auto auto;
+}
+
+.responsive_btn {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  margin: auto;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+
+nav ul {
+  display: flex;
+  gap: 48px;
+  list-style-type: none;
+}
+
+.index{
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+.index_active{
+  right: 0;
+}
+
+main {
+  width: 1024px;
+  margin: 122px auto 40px;
+}
+
+
+section {
+  margin-top: 80px;
+}
+
+/* 見出し共通 */
+h2 {
+  font-size: 36px;
+  border-bottom: solid 2px;
+}
+h2 span {
+  font-size: 18px;
+  display: block;
+}
+
+/***************
+* #first-view
+****************/
+#first-view {
+  display: flex;
+}
+
+#first-view .text {
+  align-self: center;
+  margin-right: 50px;
+}
+
+#first-view h1 {
+  font-size: 50px;
+  margin: 0 0 60px;
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+
+#first-view .sub-title {
+  font-size: 18px;
+  display: block;
+}
+/***************
+* #sec-1
+****************/
+#sec-1 {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-left: 60px;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.sec-1-right {
+  width: 560px;
+}
+
+
+
+.sec-1-right p {
+  margin: 30px 0;
+}
+/***************
+* #sec-2
+****************/
+#sec-2 h2 {
+  text-align: center;
+}
+
+.imglogo{
+    margin: auto;
+}
+
+
+.gallery {
+  width: 1018px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 29px;
+  text-align: center;
+  margin: auto;
+}
+
+.human{
+    text-align: center;
+    width: 320px;
+}
+
+
+.btn_box {
+  display: block;
+  width: 250px;
+  padding: 10px 0;
+  border: 2px solid #212121;
+  margin: 60px auto 0;
+  text-align: center;
+}
+.btn_box:hover {
+  background: #212121;
+  color: white;
+}
+
+/***************
+* #sec-3
+****************/
+#sec-3 {
+  text-align: center;
+}
+/***************
+* footer
+****************/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    background: #eee;
+    color: #000;
+    padding: 80px 0;
+    text-align: center;
+    padding: 15px;
+    width: auto;
+}
+
+.footer-company{
+    font-size: 12px;
+}
+
+small{
+    font-size: 12px;
+}
+
+
+
+
+
+/* スマホ用 */
+@media screen and (max-width: 580px){
+
+  main{
+    width: 100%;
+    margin-top: 80px;
+  }
+  p{
+    font-size: 22px;
+    width: 80%;
+    
+  }
+
+  
+  h2{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .btn_arrow{
+    font-size: 25px;
+  }
+  header{
+    background: #eee;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    top: 0;
+    position: fixed;
+    z-index: 99;
+    transition: transform 0.3s 0.3s;
+    text-align: center;
+  }
+
+  .responsive_btn{
+    display: flex;
+  }
+
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+
+  nav{
+    background: #323232;
+    width: 100%;
+    height: 1000vh;
+    padding: 80px 0 0 0;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    transition: .3s;
+  }
+
+  nav ul{
+    display: block;
+    margin: 100px;
+  }
+
+  nav ul li{
+    padding: auto;
+    margin: 60px auto;
+  }
+
+
+  .menu_active {
+    right: 0;
+    background-color: #eee;
+  }
+
+  .index{
+    margin: 40px 0 ;
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  li{
+    color: #000;
+    display: flex;
+    justify-content: center;
+    padding: auto;
+
+  }
+  .nav_link {
+    font-size: 35px;
+  }
+
+
+  .mdx-1{
+    padding-left: 20px;
+  }
+
+  #sec-1{
+    display: initial;
+    padding: none;
+  }
+
+  .text{
+    flex: none;
+  }
+
+  .mdx-1{
+    font-size: 60px;
+  }
+
+
+  #first-view{
+    display:flex;
+    flex-flow: column;
+    border:2px #ccc solid;
+    padding-top: 80px;
+  }
+
+  #first-view img{
+    width: auto;
+  }
+
+  .gallery{
+    width: 100%;
+  }
+
+  .sec-1-right{
+    width: 100%;
+  }
+
+  .sec-1-right p{
+    margin: auto;
+  }
+
+  .human{
+    margin: 30px auto;
+    text-align: center;
+  }
+
+  .human p{
+    font-size: 28px;
+    width: 100%;
+  }
+  .human h3{
+    margin: auto;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+}
+
+.menu_active {
+  right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
