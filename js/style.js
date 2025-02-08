@@ -5,3 +5,5 @@ function menuToggle() {
   const header_index_detail = document.querySelector('.nav');
   header_index_detail.classList.toggle('menu_active');
 }
+
+window.addEventListener('scroll', function() { console.log(window.scrollY); });
