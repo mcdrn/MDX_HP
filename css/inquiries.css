@@ -120,7 +120,7 @@ textarea {
 button {
     margin-top: 20px;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #000;
     color: white;
     border: none;
     border-radius: 4px;
@@ -129,7 +129,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    opacity: .5;
 }
 
 .result-message {
@@ -170,7 +170,7 @@ small{
 }
 
 @media (max-width: 768px) {
-    /* スマートフォンやタブレットでのスタイル */
+    /* タブレット*/
     .container {
         margin: 20px;
         padding: 15px;
@@ -190,14 +190,20 @@ small{
 }
 
 @media (max-width: 480px) {
-    /* スマートフォンの小さい画面用 */
+    /* スマホ用 */
+    main{
+        width: 100%;
+        max-height: 100%;
+    }
+
     .container {
-        margin: 10px;
-        padding: 10px;
+        box-sizing: border-box;
+        margin: 20% 0;
+        width: 100%;
     }
 
     h1 {
-        font-size: 1.2em;
+        font-size: 30px;
     }
 
     input, textarea {
