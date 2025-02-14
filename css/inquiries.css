@@ -191,15 +191,29 @@ small{
 
 @media (max-width: 480px) {
     /* スマホ用 */
+
+    /*html{
+        height: 100%;
+    }
+
+    body{
+        height: 100%;
+    }
+
+    .wrapper{
+        height: 100%;
+    }*/
+
     main{
         width: 100%;
-        max-height: 100%;
+        height: 100%;
     }
 
     .container {
         box-sizing: border-box;
         margin: 20% 0;
         width: 100%;
+        height: 100%;
     }
 
     h1 {
