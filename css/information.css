@@ -33,7 +33,7 @@ body {
 
 .company-image img {
     max-width: 100%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .company-details {
@@ -51,16 +51,25 @@ body {
 }
 
 /* サービスセクション */
-.services {
+.service{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.services-container {
     margin-top: 40px;
-    display: grid;
+    display: block;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 20px;  
+    text-align: center;
 }
 
 .service-item {
     background-color: #fff;
     padding: 20px;
+    margin: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -117,5 +126,11 @@ body {
      p{
         width: 100%;
         text-align: center;
+    }
+    .service{
+        display: block;
+        width: 90%;
+        text-align: center;
+        margin: auto;
     }
 }
