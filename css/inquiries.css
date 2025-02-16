@@ -1,230 +1,82 @@
-/* 基本的なスタイル設定 */
-a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-header {
-    background: #eee;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    top: 0;
-    position: fixed;
-    z-index: 99;
-    transition: transform 0.3s 0.3s;
-    text-align: center;
-    width: 100%;
-    align-items: center;
-  } 
-  
-  
-  
-  .logo {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin: auto 20px;
-  }
-  
-  
-  .menu_line {
-    background: #000;
-    border-radius: 5px;
-    width: 100%;
-    height: 5px;
-    margin: 4px 0;
-  }
-  
-  .line{
-    align-items: center;
-    margin: auto 50px auto auto;
-  }
-  
-  .responsive_btn {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
-    margin: auto;
-    cursor: pointer;
-    position: relative;
-    z-index: 10;
-  }
-  
-  
-  nav ul {
-    display: flex;
-    gap: 48px;
-    list-style-type: none;
-  }
-  
-  .index{
-      font-weight: 600;
-      margin-right: 30px;
-  }
-  
-  .index_active{
-    right: 0;
-  }
-
+/* 全体のスタイル */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
 .container {
-    width: 100%;
-    max-width: 600px;
-    margin: 50px auto;
+    width: 80%;
+    margin: 0 auto;
     padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
 }
 
-h1 {
-    text-align: center;
+
+/* メインコンテンツ */
+main {
+    padding: 40px 0;
+}
+
+/* お問い合わせフォーム */
+.contact-form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.contact-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
     color: #333;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+.form-group {
+    margin-bottom: 15px;
 }
 
-label {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #555;
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
 }
 
-input, textarea {
-    padding: 10px;
-    margin-top: 5px;
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 5px;
 }
 
-textarea {
+.form-group textarea {
     resize: vertical;
 }
 
-button {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #000;
-    color: white;
+.form-group button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
     border: none;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover {
-    opacity: .5;
+.form-group button:hover {
+    background-color: #555;
 }
 
-.result-message {
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 4px;
-    display: none;
-}
-
-.success {
-    background-color: #4CAF50;
-    color: white;
-}
-
-.error {
-    background-color: #f44336;
-    color: white;
-}
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    background: #eee;
-    color: #000;
-    padding: 80px 0;
-    text-align: center;
-    padding: 15px;
-    width: auto;
-}
-
-.footer-company{
-    font-size: 12px;
-}
-
-small{
-    font-size: 12px;
-}
-
-@media (max-width: 768px) {
-    /* タブレット*/
+@media screen and(max-width: 480px) {
     .container {
-        margin: 20px;
+        width: 90%;
+    }
+
+    .contact-form {
         padding: 15px;
-    }
-
-    h1 {
-        font-size: 1.5em;
-    }
-
-    input, textarea {
-        font-size: 14px;
-    }
-
-    button {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    /* スマホ用 */
-
-    /*html{
-        height: 100%;
-    }
-
-    body{
-        height: 100%;
-    }
-
-    .wrapper{
-        height: 100%;
-    }*/
-
-    main{
-        width: 100%;
-        height: 100%;
-    }
-
-    .container {
-        box-sizing: border-box;
-        margin: 20% 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    h1 {
-        font-size: 30px;
-    }
-
-    input, textarea {
-        font-size: 12px;
-    }
-
-    button {
-        font-size: 12px;
     }
 }
