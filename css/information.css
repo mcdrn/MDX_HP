@@ -12,7 +12,9 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
-
+.inquiries{
+    text-align: center;
+}
 
 /* 企業情報セクション */
 .company-info {
@@ -92,8 +94,10 @@ body {
     margin-bottom: 10px;
 }
 
-.contact p {
+.contact a{
     margin-bottom: 10px;
+    text-decoration: underline;
+    color: rgb(187, 130, 213);
 }
 
 

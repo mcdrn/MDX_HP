@@ -1,0 +1,120 @@
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+h2 , h3 , p{
+    text-align: center;
+    width: 100%;
+}
+
+/* ニューススライダー */
+.news-slider {
+    position: relative;
+    margin-top: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}
+
+/* ナビゲーションボタン */
+.nav-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.prev, .next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* ニュース記事 */
+.news-articles {
+    margin-top: 40px;
+}
+
+.news-articles h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.news-articles article {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-articles article h3 {
+    font-size: 1.5rem;
+}
+
+.news-articles article p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.news-articles article a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.news-articles article a:hover {
+    text-decoration: underline;
+}
+
+article{
+    margin: 40px auto;
+}
+
+@media screen and (max-width: 480px){
+    main{
+        margin-top: 120px;
+    }
+}
