@@ -1,0 +1,117 @@
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* 企業情報セクション */
+.company-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.company-image{
+    text-align: center;
+}
+
+.company-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.company-details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.company-details h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.company-details p {
+    margin-bottom: 10px;
+}
+
+/* サービスセクション */
+.services {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* お問い合わせセクション */
+.contact {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    margin-bottom: 10px;
+}
+
+
+/* スマホ用 */
+@media screen and (max-width: 480px){
+    .company-info{
+        display: block;
+        margin-top: 120px;
+    }
+
+    .company-details{
+        margin: auto;
+    }
+    h3{
+        text-align: center;
+    }
+     p{
+        width: 100%;
+        text-align: center;
+    }
+}
